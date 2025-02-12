@@ -83,8 +83,8 @@ nav ul li a {
     padding: 100px 20px;
     text-align: center;
     /* background: linear-gradient(to right, #3e8e41, #34b8a3); */
-    background: linear-gradient(to right, #333333, #708090);
-    color: white;
+    background: linear-gradient(to right, #22c4f5f8, #40f5ec);
+    color: rgb(10, 10, 10);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -106,12 +106,12 @@ nav ul li a {
 
 /* Hover effect on profile image */
 #home .profile-pic:hover {
-    transform: scale(1.1);
+    transform: scale(2.1);
 }
 
 /* Name Styling */
 #home .name {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 600;
     margin-bottom: 20px;
     letter-spacing: 2px;
@@ -120,11 +120,12 @@ nav ul li a {
 }
 
 #home .aaa {
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 500;
     margin-bottom: 20px;
+    letter-spacing: 2px;
     font-style: italic;
-    opacity: 0;
+    /* opacity: 0; */
     /* animation: fadeIn 1.5s ease forwards 1s; */
 }
 
@@ -459,42 +460,43 @@ table td {
     }
   }
   
+
 /* Contact Section */
 #contact {
     padding: 80px 20px;
     background-color: #fafafa;
 }
-  
+
 #contact h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
+    text-align: center;
 }
-  
-#contact form {
-    display: flex;
-    flex-direction: column;
+
+.contact-info {
     max-width: 500px;
     margin: 0 auto;
+    text-align: center;
 }
-  
-#contact input, #contact textarea {
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+
+#contact h3 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #34b8a3;
 }
-  
-#contact button {
-    padding: 10px;
-    background-color: #34b8a3;
-    color: white;
-    font-size: 1.2rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+
+#contact p {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
 }
-  
-#contact button:hover {
-    background-color: #2e9f87;
+
+#contact a {
+    color: #34b8a3;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+#contact a:hover {
+    color: #2e9f87;
 }
