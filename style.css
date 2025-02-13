@@ -26,7 +26,7 @@ body {
     justify-content: center;
     align-items: center;
     z-index: 1000;
-    animation: fadeOut 3s ease-out 2s forwards;
+    animation: fadeOut 2s ease-out 1s forwards;
     pointer-events: auto; /* Ensure it doesn't block interactions */
 }
   
@@ -106,7 +106,7 @@ nav ul li a {
 
 /* Hover effect on profile image */
 #home .profile-pic:hover {
-    transform: scale(2.1);
+    transform: scale(1.3);
 }
 
 /* Name Styling */
