@@ -414,6 +414,128 @@ table td {
     color: #007acc;
     margin-right: 10px;
 }
+/* Suggested Readings Section */
+#suggested-readings {
+    padding: 60px 20px;
+    background: #f9f9f9;
+}
+
+#suggested-readings h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#suggested-readings p {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    color: #0e0d0d;
+    text-align: center;
+}
+
+/* Flex container for side-by-side layout */
+.reading-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Adjust spacing between columns */
+    align-items: flex-start; /* Aligns columns at the top while allowing variable heights */
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+/* Each column adapts to content height while maintaining equal width */
+.reading-column {
+    flex: 1; /* Ensures both columns take equal width */
+    min-width: 300px; /* Prevents excessive shrinking on smaller screens */
+    padding: 20px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Headings inside reading columns */
+.reading-column h3 {
+    font-size: 1.8rem;
+    color: #222;
+    margin-bottom: 15px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.reading-column h4 {
+    font-size: 1.3rem;
+    color: #5f0404;
+    margin-bottom: 30px;
+    font-weight: bold;
+    text-align: justify;
+}
+
+/* Styling for lists */
+.reading-list {
+    list-style: none;
+    padding: 0;
+}
+
+.reading-list li {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.reading-list a {
+    color: #007acc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.reading-list a:hover {
+    text-decoration: underline;
+    color: #005b99;
+}
+
+/* Book Table Styling */
+.book-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: #fff;
+}
+
+.book-table th, .book-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.book-table th {
+    background-color: #720bd3;
+    color: white;
+    text-transform: uppercase;
+}
+
+.book-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.book-table tr:hover {
+    background-color: #ddd;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .reading-container {
+        flex-direction: column;
+    }
+    .reading-column {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+
 
 /* Icons for Titles */
 .experience-subsection h3:before {
