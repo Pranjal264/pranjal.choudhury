@@ -12,6 +12,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
       rel="stylesheet"
     />
+    
   </head>
   <body>
     <!-- Welcome Screen -->
@@ -25,6 +26,7 @@
       <nav>
         <ul>
           <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Me</a></li>
           <li><a href="#education">Education</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#suggested-readings">Suggested Readings</a></li>
@@ -111,6 +113,38 @@
       </div>
     </section>
     
+        <!-- About Me Section -->
+    <section id="about">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-content">
+        <p class="bio-text">
+          I am a physics student specializing in optics and biomedical research, with experience in theoretical, computational, and experimental optics, focusing 
+          on imaging. My PhD work involves designing a clinical grade super resolution microscope for application in biomedical optics, and I am currently developing 
+          a near-real-time image reconstruction methodology for Single Molecule Localization Microscopy. The work involves various aspects of algorithm development 
+          and image processing including the use of Machine Learning/ Deep Neural Networks. Additionally I am exploring the application of structured light and adaptive optics. 
+    
+          I am actively involved with SPIE and OPTICA, organizing scientific outreach programs, talks, and hands-on workshops to promote science and optics.
+          
+          Outside of research, I enjoy reading both fiction and non-fiction. I also have a deep interest in studying India’s rich history and cultural heritage. 
+          Additionally, I am a passionate football fan and a dedicated supporter of NorthEast United FC and FC Barcelona.
+        </p>
+        <div class="about-images">
+          <img src="images/personal/1.jpg" alt="Research work" class="about-pic" onclick="openModal(0)" />
+          <img src="images/personal/2.jpg" alt="Conference presentation" class="about-pic" onclick="openModal(1)" />
+          <img src="images/personal/3.JPG" alt="Outreach event" class="about-pic" onclick="openModal(2)" />
+          <img src="images/personal/4.JPG" alt="With Imperial College Biophotonics group" class="about-pic" onclick="openModal(3)" />
+        </div>
+      </div>
+    </section>
+
+<!-- Image Modal -->
+<div id="imageModal" class="modal" onclick="closeModal()">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <img class="modal-content" id="modalImage" oncontextmenu="return false;">
+</div>
+
+
+
     <section id="education">
       <h2>Education</h2>
       <div class="education-container">
@@ -734,23 +768,7 @@
       <p style="text-align: center">© Pranjal Choudhury | All Rights Reserved</p>
     </footer>
 
-    <!-- JavaScript -->
-    <script>
-      const roles = [
-        "a budding physicist",
-        "an amateur coder",
-        "a football enthusiast",
-        "a Nerd",
-      ];
-      let index = 0;
 
-      function changeRole() {
-        const dynamicText = document.getElementById("dynamic-text");
-        dynamicText.textContent = roles[index];
-        index = (index + 1) % roles.length;
-      }
-
-      setInterval(changeRole, 1500);
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
