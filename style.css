@@ -252,7 +252,7 @@ nav ul li a {
     display: flex;
     justify-content: center;
     gap: 20px;
-    margin-top: 20px;
+    margin-top: 40px;
   }
 
   .bio-text {
@@ -472,7 +472,7 @@ table td {
 }
 
 .experience-subsection:hover {
-    transform: translateY(-5px);
+    transform: translateY(-2px);
     box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
 }
 
@@ -533,6 +533,8 @@ table td {
     color: #007acc;
     margin-right: 10px;
 }
+
+
 /* Suggested Readings Section */
 #suggested-readings {
     padding: 60px 20px;
@@ -560,7 +562,7 @@ table td {
     flex-wrap: wrap;
     gap: 20px; /* Adjust spacing between columns */
     align-items: flex-start; /* Aligns columns at the top while allowing variable heights */
-    max-width: 90%;
+    max-width: 95%;
     margin: 0 auto;
 }
 
