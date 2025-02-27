@@ -80,66 +80,79 @@ nav ul li a {
 
 /* Home Section */
 #home {
-    padding: 100px 20px;
-    text-align: center;
-    /* background: linear-gradient(to right, #3e8e41, #34b8a3); */
+    padding: 80px 20px;
     background: linear-gradient(to right, #22c4f5f8, #40f5ec);
     color: rgb(10, 10, 10);
     min-height: 100vh;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    transition: background 0.3s ease;
 }
 
-/* Profile Picture */
-#home .profile-pic {
-    width: 150px;
-    height: 150px;
+/* Container Styling */
+.home-container {
+    display: flex;
+    align-items: center;
+    max-width: 1000px;
+    width: 100%;
+}
+
+/* Profile Picture on Left */
+.profile-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.profile-pic {
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
-    margin-bottom: 20px;
     border: 5px solid white;
     object-fit: cover;
-    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+    transition: transform 0.3s ease;
 }
 
-/* Hover effect on profile image */
-#home .profile-pic:hover {
-    transform: scale(1.3);
+.profile-pic:hover {
+    transform: scale(1.1);
 }
 
-/* Name Styling */
-#home .name {
+/* Text Content on Right */
+.content-container {
+    flex: 2;
+    text-align: left;
+    padding-left: 40px;
+}
+
+/* Name */
+.name {
     font-size: 2rem;
     font-weight: 600;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     letter-spacing: 2px;
     text-transform: uppercase;
     animation: fadeIn 1.5s ease;
 }
 
-#home .aaa {
-    font-size: 2.5rem;
+/* "I am" Text */
+.aaa {
+    font-size: 1.5rem;
     font-weight: 500;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     letter-spacing: 2px;
-    font-style: italic;
-    /* opacity: 0; */
-    /* animation: fadeIn 1.5s ease forwards 1s; */
 }
 
-/* Dynamic Text Animation */
-#home .dynamic-text {
+/* Dynamic Text */
+.dynamic-text {
     font-size: 2rem;
     font-weight: 500;
     margin-bottom: 20px;
-    font-style: italic;
     opacity: 0;
     animation: fadeIn 1.5s ease forwards 1s;
 }
 
-/* Dynamic Text Fade-in Animation */
+/* Fade-in Animation */
 @keyframes fadeIn {
     0% {
         opacity: 0;
@@ -151,7 +164,7 @@ nav ul li a {
     }
 }
 
-/* CV Button Styling */
+/* CV Button */
 .cv-button {
     display: inline-block;
     padding: 10px 30px;
@@ -159,62 +172,86 @@ nav ul li a {
     color: white;
     text-decoration: none;
     font-size: 1.1rem;
-    margin-bottom: 20px;
+    margin-top: 20px;
     border-radius: 5px;
     transition: background-color 0.3s, transform 0.2s;
 }
 
-/* Hover effect on CV button */
 .cv-button:hover {
     background-color: #d49300;
     transform: translateY(-5px);
 }
 
-/* Social Links Container */
+/* Social Links */
 .social-links {
     margin-top: 20px;
     display: flex;
-    justify-content: center;
-    gap: 20px;
+    gap: 15px;
+    flex-wrap: wrap;
 }
 
-/* Social Icons */
-.social-links a {
-    display: inline-block;
-    transition: transform 0.3s ease;
-}
-
-/* Hover effect on social icons */
-.social-links a:hover {
-    transform: scale(1.2);
-}
-
-/* Social Icon Image */
 .social-links img {
     width: 40px;
     height: 40px;
     transition: transform 0.3s ease;
 }
 
-/* Mobile Responsiveness */
+.social-links a:hover img {
+    transform: scale(1.2);
+}
+
+/* Profile Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    position: relative;
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.modal-image {
+    width: 100%;
+    height: auto;
+    pointer-events: none; /* Prevents download */
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
-    #home .name {
-        font-size: 2rem;
+    .home-container {
+        flex-direction: column;
+        text-align: center;
     }
-    
-    #home .dynamic-text {
-        font-size: 1.5rem;
+    .profile-container {
+        margin-bottom: 20px;
     }
-
-    .social-links {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .social-links a {
-        margin: 10px;
+    .content-container {
+        padding-left: 0;
+        text-align: center;
     }
 }
+
+
 
 /* <!-- CSS for About Me Section --> */
 #about {
