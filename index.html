@@ -2,767 +2,220 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="google-site-verification" content="wB8DDuPlU2Jd7DZvm43DKjBvoD0lWSYeiGNy6EljEvI" />
+    <meta
+      name="google-site-verification"
+      content="wB8DDuPlU2Jd7DZvm43DKjBvoD0lWSYeiGNy6EljEvI"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Pranjal Choudhury - Researcher at IIT Guwahati, working in optics and biomedical research.">
-    <meta name="keywords" content="Pranjal Choudhury, IIT Guwahati, Tezpur University, Imperial College London, optics, microscopy, biomedical research">
+    <meta
+      name="description"
+      content="Pranjal Choudhury - Researcher at IIT Guwahati, working in optics and biomedical research."
+    />
+    <meta
+      name="keywords"
+      content="Pranjal Choudhury, IIT Guwahati, Tezpur University, Imperial College London, optics, microscopy, biomedical research"
+    />
     <title>Pranjal's Personal Website</title>
     <link rel="stylesheet" href="style.css" />
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
       rel="stylesheet"
     />
-    
   </head>
   <body>
-    <!-- Welcome Screen -->
-    <div id="welcome-screen">
-      <h1>Welcome to My Web Page</h1>
-      <h2>- Pranjal -</h2>
-    </div>
+   
 
-    <!-- Navigation Bar -->
+
     <header>
       <nav>
         <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About Me</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#suggested-readings">Suggested Readings</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="education.html">Education</a></li>
+          <li><a href="experience.html">Experience</a></li>
+          <li><a href="readings.html">Suggested Readings</a></li>
+          <li><a href="contact.html">Contact Me</a></li>
         </ul>
       </nav>
     </header>
 
+    <main>
+      <!-- Home Section -->
+      <section id="home">
+        <div class="home-container">
+          <div class="profile-container">
+            <img
+              src="images/profile2.png"
+              alt="Profile Picture"
+              class="profile-pic"
+              onclick="openProfileModal()"
+            />
+          </div>
+          <div class="content-container">
+            <h1 class="name">Pranjal Choudhury</h1>
+            <p class="aaa">I am</p>
+            <p class="dynamic-text">
+              <span id="dynamic-text"> a budding physicist</span>
+            </p>
+            <a
+              href="assets/CV_new.pdf"
+              target="_blank"
+              class="cv-button"
+              download
+              rel="noopener noreferrer"
+            >
+              Download My CV
+            </a>
+            <div class="social-links">
+              <a
+                href="https://github.com/pranjal264"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="images/logos/github.png"
+                  alt="GitHub"
+                  class="social-icon"
+                />
+              </a>
+              <a
+                href="https://www.researchgate.net/profile/Pranjal-Choudhury-3"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="images/logos/RG_Logo.png"
+                  alt="ResearchGate"
+                  class="social-icon"
+                />
+              </a>
+              <a
+                href="https://scholar.google.com/citations?user=xZM7s6gAAAAJ&hl=en&oi=ao"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="images/logos/scholar.png"
+                  alt="Google Scholar"
+                  class="social-icon"
+                />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/pranjal-choudhury-6862b61b0/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="images/logos/linkedin.png"
+                  alt="LinkedIn"
+                  class="social-icon"
+                />
+              </a>
+              <a
+                href="https://www.x.com/_pranjal14/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="images/logos/X_twitter.png"
+                  alt="X"
+                  class="social-icon"
+                />
+              </a>
+              <a
+                href="https://www.goodreads.com/user/show/181902255-pranjal-choudhury"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="images/logos/goodreads.png"
+                  alt="Goodreads"
+                  class="social-icon"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
 
-    <!-- Home Section -->
-    <section id="home">
-      <div class="home-container">
-        <div class="profile-container">
+      <!-- Profile Modal -->
+      <div id="profileModal" class="modal" onclick="closeProfileModal()">
+        <div class="modal-content" onclick="event.stopPropagation();">
+          <span class="close" onclick="closeProfileModal()">&times;</span>
           <img
             src="images/profile2.png"
             alt="Profile Picture"
-            class="profile-pic"
-            onclick="openProfileModal()"
+            class="modal-image"
           />
         </div>
-        <div class="content-container">
-          <h1 class="name">Pranjal Choudhury</h1>
-          <p class="aaa"> I am </p>
-          <p class="dynamic-text">
-            <span id="dynamic-text"> a physicist</span>
+      </div>
+
+      <!-- About Me Section -->
+      <section id="about">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+          <p class="bio-text">
+            I am a physics student specializing in optics, with experience in
+            theoretical, computational, and experimental optics, focusing on
+            imaging. My PhD work involves designing a clinical grade super
+            resolution microscope for application in biomedical optics, and I am
+            currently developing a near-real-time image reconstruction
+            methodology for Single Molecule Localization Microscopy. The work
+            involves various aspects of algorithm development and image
+            processing including the use of Machine Learning / Deep Neural
+            Networks. Additionally I am exploring the application of structured
+            light and adaptive optics. I am actively involved with SPIE and
+            OPTICA, organizing scientific outreach programs, talks, and hands-on
+            workshops to promote science and optics. Outside of research, I
+            enjoy reading both fiction and non-fiction. I also have a deep
+            interest in studying India’s rich history and cultural heritage.
+            Additionally, I am a passionate football fan and a dedicated
+            supporter of NorthEast United FC and FC Barcelona.
           </p>
-          <a
-            href="assets/CV_new.pdf" target="_blank"
-            class="cv-button"
-            download
-            rel="noopener noreferrer"
-          >
-            Download My CV
-          </a>
-          <div class="social-links">
-            <a href="https://github.com/pranjal264" target="_blank" rel="noopener noreferrer">
-              <img src="images/logos/github.png" alt="GitHub" class="social-icon" />
-            </a>
-            <a href="https://www.researchgate.net/profile/Pranjal-Choudhury-3" target="_blank" rel="noopener noreferrer">
-              <img src="images/logos/RG_Logo.png" alt="ResearchGate" class="social-icon" />
-            </a>
-            <a href="https://scholar.google.com/citations?user=xZM7s6gAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener noreferrer">
-              <img src="images/logos/scholar.png" alt="Google Scholar" class="social-icon" />
-            </a>
-            <a href="https://www.linkedin.com/in/pranjal-choudhury-6862b61b0/" target="_blank" rel="noopener noreferrer">
-              <img src="images/logos/linkedin.png" alt="LinkedIn" class="social-icon" />
-            </a>
-            <a href="https://www.x.com/_pranjal14/" target="_blank" rel="noopener noreferrer">
-              <img src="images/logos/X_twitter.png" alt="X" class="social-icon" />
-            </a>
-            <a href="https://www.goodreads.com/user/show/181902255-pranjal-choudhury" target="_blank" rel="noopener noreferrer">
-              <img src="images/logos/goodreads.png" alt="Goodreads" class="social-icon" />
-            </a>
+          <div class="about-images">
+            <img
+              src="images/personal/1.jpg"
+              alt="Research work"
+              class="about-pic"
+              onclick="openModal(0)"
+            />
+            <img
+              src="images/personal/2.jpg"
+              alt="Conference presentation"
+              class="about-pic"
+              onclick="openModal(1)"
+            />
+            <img
+              src="images/personal/3.JPG"
+              alt="Outreach event"
+              class="about-pic"
+              onclick="openModal(2)"
+            />
+            <img
+              src="images/personal/4.jpg"
+              alt="With Imperial College Biophotonics group"
+              class="about-pic"
+              onclick="openModal(3)"
+            />
           </div>
         </div>
+      </section>
+
+      <!-- Image Modal -->
+      <div id="imageModal" class="modal" onclick="closeModal()">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img
+          class="modal-content"
+          id="modalImage"
+          oncontextmenu="return false;"
+        />
       </div>
-    </section>
+    </main>
 
-    <!-- Profile Modal -->
-    <div id="profileModal" class="modal" onclick="closeProfileModal()">
-      <div class="modal-content" onclick="event.stopPropagation();">
-        <span class="close" onclick="closeProfileModal()">&times;</span>
-        <img src="images/profile2.png" alt="Profile Picture" class="modal-image" />
-      </div>
-    </div>
-    
-        <!-- About Me Section -->
-    <section id="about">
-      <h2 class="section-title">About Me</h2>
-      <div class="about-content">
-        <p class="bio-text">
-          I am a physics student specializing in optics, with experience in theoretical, computational, and experimental optics, focusing 
-          on imaging. My PhD work involves designing a clinical grade super resolution microscope for application in biomedical optics, and I am currently developing 
-          a near-real-time image reconstruction methodology for Single Molecule Localization Microscopy. The work involves various aspects of algorithm development 
-          and image processing including the use of Machine Learning / Deep Neural Networks. Additionally I am exploring the application of structured light and adaptive optics. 
-    
-          I am actively involved with SPIE and OPTICA, organizing scientific outreach programs, talks, and hands-on workshops to promote science and optics.
-          
-          Outside of research, I enjoy reading both fiction and non-fiction. I also have a deep interest in studying India’s rich history and cultural heritage. 
-          Additionally, I am a passionate football fan and a dedicated supporter of NorthEast United FC and FC Barcelona.
-        </p>
-        <div class="about-images">
-          <img src="images/personal/1.jpg" alt="Research work" class="about-pic" onclick="openModal(0)" />
-          <img src="images/personal/2.jpg" alt="Conference presentation" class="about-pic" onclick="openModal(1)" />
-          <img src="images/personal/3.JPG" alt="Outreach event" class="about-pic" onclick="openModal(2)" />
-          <img src="images/personal/4.jpg" alt="With Imperial College Biophotonics group" class="about-pic" onclick="openModal(3)" />
-        </div>
-      </div>
-    </section>
-
-    <!-- Image Modal -->
-    <div id="imageModal" class="modal" onclick="closeModal()">
-      <span class="close" onclick="closeModal()">&times;</span>
-      <img class="modal-content" id="modalImage" oncontextmenu="return false;">
-    </div>
-
-
-
-    <section id="education">
-      <h2>Education</h2>
-      <div class="education-container">
-        <!-- Left Section: Academic Qualifications -->
-        <div class="academic-qualifications">
-          <h3>Academic Qualifications</h3>
-          <table>
-            <thead>
-              <tr>
-                <th></th>
-                <th>Qualification</th>
-                <th>Board/University</th>
-                <th>Year</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>
-                  <img
-                    src="images/logos/CBSE_new_logo.png"
-                    alt="Class 10 Logo"
-                    class="logo"
-                  />
-                </td>
-                <td>Class 10</td>
-                <td>Central Board of Secondary Education</td>
-                <td>2012</td>
-              </tr>
-              <tr>
-                <td>
-                  <img
-                    src="images/logos/AHSEC.png"
-                    alt="Class 12 Logo"
-                    class="logo"
-                  />
-                </td>
-                <td>Class 12</td>
-                <td>Assam Higher Secondary Education Council</td>
-                <td>2014</td>
-              </tr>
-              <tr>
-                <td>
-                  <img src="images/logos/TU.png" alt="M.Sc Logo" class="logo" />
-                </td>
-                <td>Integrated M.Sc</td>
-                <td>Tezpur University</td>
-                <td>2019</td>
-              </tr>
-              <tr>
-                <td>
-                  <img
-                    src="images/logos/IIT_G.png"
-                    alt="PhD Logo"
-                    class="logo"
-                  />
-                </td>
-                <td>PhD</td>
-                <td>IIT Guwahati</td>
-                <td>2020-present</td>
-              </tr>
-              <tr>
-                <td>
-                  <img src="images/logos/ICL.png" alt="PhD Logo" class="logo" />
-                </td>
-                <td>Visiting PhD</td>
-                <td>Imperial College London</td>
-                <td>2024</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-        <!-- Right Section: Certificates -->
-        <div class="certificates">
-          <h3>Certificates</h3>
-          <ul>
-            <li>
-              <img
-                src="images/logos/Kaggle_Logo.png"
-                alt="Kaggle Logo"
-                class="logo"
-              />
-              <a
-                href="images/certificates/KAGGLE_PD.png"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span>Pandas</span>
-              </a>
-            </li>
-            <li>
-              <img
-                src="images/logos/Kaggle_Logo.png"
-                alt="Kaggle Logo"
-                class="logo"
-              />
-              <a
-                href="images/certificates/KAGGLE_ML.png"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span>Intro to Machine Learning</span>
-              </a>
-            </li>
-            <li>
-              <img
-                src="images/logos/caciitg_logo.jpg"
-                alt="Consulting and Analytics Club IITG logo"
-                class="logo"
-              />
-              <a
-                href="images/certificates/IITG_SA.png"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span
-                  >Summer Analytics 2022: Data Science and Machine
-                  Learning</span
-                >
-              </a>
-            </li>
-            <li>
-              <img
-                src="images/logos/iitg_AI.jpg"
-                alt="AI Club IITG logo"
-                class="logo"
-              />
-              <a
-                href="images/certificates/IITG_CC.png"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span>Machine Learning and Artificial Intelligence</span>
-              </a>
-            </li>
-            <li>
-              <img
-                src="images/logos/Coursera_logo.png"
-                alt="Coursera Logo"
-                class="logo"
-              />
-              <a
-                href="images/certificates/Coursera_TF1.png"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span>Getting Started with Tensorflow 2</span>
-              </a>
-            </li>
-            <li>
-              <img src="images/logos/IIT_G.png" alt="IITG Logo" class="logo" />
-              <a
-                href="images/certificates/IITG_TIDF.png"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span
-                  >Machine Learning & Deep Learning Techniques with
-                  Applications</span
-                >
-              </a>
-            </li>
-            <li>
-              <img src="images/logos/IISER_PUNE_I_HUB.PNG" alt="IITG Logo" class="logo" />
-              <a
-                href="images/certificates/Q_Computing.jpg"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span
-                  >Introductory Course on Quantum Computing</span
-                >
-              </a>
-            </li>
-
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!--Experience and Achievements section-->
-    <section id="experience">
-      <div class="container">
-        <h2>Experience & Achievements</h2>
-
-        <div class="experience-grid">
-          <!-- Left Column -->
-          <div class="experience-column">
-            <!-- Academic Achievements Subsection -->
-            <div class="experience-subsection">
-              <h3>Academic Achievements</h3>
-              <ul>
-                <li>DST Inspire Fellowship 2014-2019</li>
-                <li>IIT JAM 2017</li>
-                <li>GATE 2019</li>
-                <li>SLET-NE 2019</li>
-                <li>Institute Gold Medal, Tezpur University</li>
-                <li>CSIR JRF/NET 2019</li>
-                <li>GATE 2020</li>
-                <li>JEST 2020</li>
-                <li>DST INSPIRE Fellowship 2020-2025</li>
-                <li>
-                  Imperial College London Global Development Hub Fellowship 2024
-                </li>
-                <li>
-                  <a
-                    href="https://accreditations.ioppublishing.org/e73b42e0-78fe-4bb7-a57b-ee4074f223bc#acc.Iu4fr9na"
-                    target="_blank"
-                  >
-                    IOP Trusted reviewer
-                  </a>
-                </li>
-              </ul>
-            </div>
-
-            <!-- Publications Subsection -->
-            <div class="experience-subsection">
-              <h3>Publications</h3>
-              <ul>
-                <li>
-                  <a
-                    href="https://doi.org/10.5201/ipol.2024.496"
-                    target="_blank"
-                  >
-                    Localization and Image Reconstruction in a STORM Based
-                    Super-resolution Microscope - IPOL
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://doi.org/10.1016/j.optlaseng.2024.108234"
-                    target="_blank"
-                  >
-                    Adaptive image thresholding and localization of point spread
-                    functions with enhanced precision for single molecule
-                    localization based super-resolution microscopy - Optics and
-                    Lasers in Engineering
-                  </a>
-                </li>
-                <li>
-                  <a href="https://doi.org/10.1111/jmi.13362" target="_blank">
-                    Neural network-assisted localization of clustered point
-                    spread functions in single-molecule localization microscopy
-                    - Journal of Microscopy
-                  </a>
-                </li>
-                <li>
-                  <a href="https://doi.org/10.1063/5.0217409" target="_blank">
-                    Tuning the excitation laser power in a stochastic optical
-                    reconstruction microscope for Alexa Fluor 647 dye in
-                    Vectashield mounting media - Review of Scientific
-                    Instruments
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://doi.org/10.1109/JSEN.2024.3514190"
-                    target="_blank"
-                  >
-                    Deep learning-driven wavefront sensing for grating-array
-                    based wavefront sensor - IEEE Sensors Journal
-                  </a>
-                </li>
-              </ul>
-            </div>
-
-            <!-- Projects Subsection -->
-            <div class="experience-subsection">
-              <h3>Research Project codes</h3>
-              <ul>
-                <li>
-                  <a
-                    href="https://github.com/Pranjal264/SMLM_localizer"
-                    target="_blank"
-                  >
-                    I developed this code for image reconstruction in a STORM
-                    based super resolution microscope as a part of my PhD.
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://github.com/Holgraphy-and-Imaging-Lab-IIT-Guwahati/adaptive_thresholding"
-                    target="_blank"
-                  >
-                    I developed this code for Adaptive image thresholding in
-                    SMLM images. (published in Optics and Lasers in Engineering)
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://github.com/Holgraphy-and-Imaging-Lab-IIT-Guwahati/CAPL "
-                    target="_blank"
-                  >
-                    I developed this code for unmixing clustered PSFs in SMLM
-                    images. (published in Journal of Microscopy)
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://github.com/Pranjal264/CNN_GAWS"
-                    target="_blank"
-                  >
-                    I developed this code for predicting aberrations in terms of
-                    Zernike polynomials to be used in a Shack-Hartman type
-                    wavefront sensor (published in IEEE Sensors Journal)
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://github.com/Pranjal264/drift_correction"
-                    target="_blank"
-                  >
-                    I developed this code for lateral drift correction in SMLM
-                    images. (work manuscript under preparation)
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://github.com/Pranjal264/MM_python_SMLM_localizer/tree/main"
-                    target="_blank"
-                  >
-                    I developed this plugin for real time localization and visualization of super resolved images in Micro-manager. It runs a custom python script in background to localize the molecules in real time.
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <!-- Right Column -->
-          <div class="experience-column">
-            <!-- Proceedings Subsection -->
-            <div class="experience-subsection">
-              <h3>Proceedings</h3>
-              <ul>
-                <li>
-                  <a
-                    href="https://doi.org/10.1109/WRAP59682.2023.10712887"
-                    target="_blank"
-                  >
-                    Advancing Super-Resolution Imaging: A Comprehensive Analysis
-                    of Gaussian Fitting in STORM Microscopy - IEEE
-                  </a>
-                </li>
-                <li>
-                  <a href="https://doi.org/10.1117/12.2648670" target="_blank">
-                    Improvement in wavefront measurement accuracy in grating
-                    array-based zonal wavefront sensors by modulating the
-                    intensity profile of the incident beam - SPIE
-                  </a>
-                </li>
-                <li>
-                  <a href="https://doi.org/10.1117/12.2648666" target="_blank">
-                    Orthogonality of Zernike modes in phase profiles estimated
-                    using Zonal wavefront sensor and transport of intensity
-                    phase retrieval method - SPIE
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://doi.org/10.1109/WRAP59682.2023.10712801"
-                    target="_blank"
-                  >
-                    Fast and Efficient Wavefront Estimation Algorithm Using
-                    Slope Values in Zonal Wavefront Sensor - IEEE
-                  </a>
-                </li>
-              </ul>
-            </div>
-
-            <!-- Conference Presentations Subsection -->
-            <div class="experience-subsection">
-              <h3>Conference Presentations</h3>
-              <ul>
-                <li>
-                  Image reconstruction in a STORM based super resolution
-                  microscope - NCETP 2021, Tezpur University
-                </li>
-                <li>
-                  A python program for image reconstruction in a STORM based
-                  super resolution microscope - RIC 2023, IIT Guwahati
-                </li>
-                <li>
-                  Role of Gaussian Fitting in the image reconstruction in a
-                  STORM based super resolution microscope - PHOTONICS 2023, IISC
-                  Bangalore
-                </li>
-                <li>
-                  Advancing super resolution imaging: a comprehensive analysis
-                  of gaussian fitting in STORM microscopy - IEEE WRAP 2023, IIIT
-                  Allahabad
-                </li>
-                <li>
-                  Image reconstruction modalities in a single molecule
-                  localization microscope - LIGHT seminar 2024, Imperial College
-                  London
-                </li>
-                <li>
-                  Convolutional Neural Network in Localization based
-                  Super-Resolution Optical Microscopy - PANE 2024, Tezpur
-                  University
-                </li>
-              </ul>
-            </div>
-
-            <div class="experience-subsection">
-              <h3>Programming Languages & Platforms</h3>
-              <div class="logos-container">
-                <img
-                  src="images/logos/C_Programming_Language.png"
-                  alt="C"
-                  title="C"
-                />
-                <img src="images/logos/C++_Logo.png" alt="C++" title="C++" />
-                <img
-                  src="images/logos/python.png"
-                  alt="Python"
-                  title="Python"
-                />
-                <img
-                  src="images/logos/Java_programming_language_logo.png"
-                  alt="Java"
-                  title="java"
-                />
-                <img
-                  src="images/logos/Matlab_Logo.png"
-                  alt="MATLAB"
-                  title="MATLAB"
-                />
-                <img
-                  src="images/logos/tensorflow-logo-1.png"
-                  alt="Tensorflow"
-                  title="Tensorflow"
-                />
-                <img
-                  src="images/logos/opencv-logo-1.png"
-                  alt="OpenCV"
-                  title="OpenCV"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Suggested Readings Section -->
-<section id="suggested-readings">
-  <h2>Suggested Lectures and Readings</h2>
-  <p>Here are some useful websites for exploring physics and programming:</p>
-  
-  <div class="reading-container">
-      <!-- Physics Readings -->
-      <div class="reading-column">
-          <h3>Physics Resources</h3>
-          <ul class="reading-list">
-              <li>
-                  You can follow Feynman Lectures on Physics. They are available for free on 
-                  <a href="https://www.feynmanlectures.caltech.edu" target="_blank">Feynman Lectures Website</a>. 
-                  They provide a very good introduction to almost all topics of Physics.
-              </li>
-              <li>
-                  <a href="https://theoreticalminimum.com/courses" target="_blank">Leonard Susskind (Stanford): The Theoretical Minimum</a> 
-                  - Lectures every physics student needs to go through at least once. They are excellent for concept building.
-              </li>
-              <li>
-                  <a href="https://oyc.yale.edu/physics" target="_blank">Ramamurti Shankar (Yale)</a> 
-                  - A basic introduction to physics. The course is split into Fundamentals of Physics I and II.
-              </li>
-              <li>
-                  <a href="https://www.damtp.cam.ac.uk/user/tong/teaching.html" target="_blank">David Tong (Cambridge) Lecture Notes</a> 
-                  - Some of the best-curated notes for undergraduate and postgraduate physics studies.
-              </li>
-              <li>
-                  <a href="https://ocw.mit.edu/courses/physics/" target="_blank">MIT OpenCourseWare - Physics</a> 
-                  - Free physics courses from MIT. Look for Prof. Mehran Kardar's lectures on Statistical Mechanics.
-              </li>
-              <li>
-                  For specific topics, refer to 
-                  <a href="https://nptel.ac.in" target="_blank">NPTEL</a>. Almost everything is taught in NPTEL now a days.
-              </li>
-              <li>
-                  <a href="https://opc.iitd.ac.in/olc" target="_blank">IIT Delhi Optics Learning Centre</a> 
-                  - A portal for those interested in Optics and Photonics and related recent R&D in India.
-              </li>
-              <li>
-                  <a href="https://physicsworld.com" target="_blank">Physics World</a> 
-                  - News, research, and insights from the world of physics.
-              </li>
-          </ul>
-
-
-          <h3>Books I Followed During My Graduation</h3>
-          <table class="book-table">
-              <thead>
-                  <tr>
-                      <th>Subject</th>
-                      <th>Book Title and Author</th>
-                  </tr>
-              </thead>
-              <tbody>
-                  <tr>
-                      <td>Mathematical Physics</td>
-                      <td>
-                          Mathematical Methods for Physicists: Arfken & Weber <br>
-                          Mathematical Physics: H.K. Dass
-                      </td>
-                  </tr>
-                  <tr>
-                      <td>Classical Mechanics</td>
-                      <td>
-                          Classical Mechanics: Herbert Goldstein <br>
-                          Classical Mechanics: J.C. Upadhyay (because I found Goldstein book difficult)
-                      </td>
-                  </tr>
-                  <tr>
-                      <td>Electrodynamics</td>
-                      <td>
-                          Introduction to Electrodynamics: David J. Griffiths
-                      </td>
-                  </tr>
-                  <tr>
-                      <td>Quantum Mechanics</td>
-                      <td>
-                          Introduction to Quantum Mechanics: David J. Griffiths <br>
-                          Quantum Mechanics Concepts and Applications: Nouredine Zettili <br>
-                          Principles of Quantum Mechanics: R. Shankar
-                      </td>
-                  </tr>
-                  <tr>
-                      <td>Statistical Mechanics</td>
-                      <td>
-                          Fundamentals of Statistical and Thermal Physics: Frederick Reif <br>
-                          Statistical Mechanics: Raj Kumar Pathria
-                      </td>
-                  </tr>
-                  <tr>
-                      <td>Condensed Matter Physics</td>
-                      <td>
-                          Introduction to Solid State Physics: Charles Kittel <br>
-                          Solid State Physics: Ashcroft and Mermin
-                      </td>
-                  </tr>
-                  <tr>
-                      <td>Electronics</td>
-                      <td>
-                          Semiconductor Physics and Devices: Donald Neamen <br>
-                          Electronic Devices and Circuit Theory: Louis Nashelsky and Robert Boylestad (selected readings)
-                      </td>
-                  </tr>
-                  <tr>
-                      <td>Optics</td>
-                      <td>
-                          Introduction to Optics: Pedrotti <br>
-                          Introduction to Fourier Optics: Joseph W. Goodman <br>
-                          Principles of Optics: Born & Wolf
-                      </td>
-                  </tr>
-              </tbody>
-          </table>
-          
-
-      </div>
-
-      <!-- Programming Readings -->
-      <div class="reading-column">
-          <h3>Programming & Machine Learning</h3>
-          <h4>Here are some useful resources for learning programming and machine learning. But first, learn one of C/C++ and then move towards Python (because everyone is using 
-            it now a days)</h4>
-          
-          <ul class="reading-list">
-              <li>
-                  <a href="https://pll.harvard.edu/course/cs50-introduction-computer-science" target="_blank">Harvard CS50 - Introduction to Computer Science</a> 
-                  - The celebrated course by David Malan, a fantastic beginner-friendly course covering programming fundamentals. Here is the 
-                  <a href = "https://www.youtube.com/watch?v=3LPJfIKxwWc&list=PLhQjrBD2T381WAHyx1pq-sBfykqMBI7V4" target = "_blank">Youtube</a> link for the lectures. 
-                  You can follow it with CS50’s <a href = "https://www.youtube.com/watch?v=nLRL_NcnK-4" target = "_blank">Introduction to Programming with Python</a> course for continuity.
-              </li>
-              <li>
-                  <a href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/" 
-                  target="_blank">MIT OpenCourseWare - Introduction to Computer Science and Programming in Python</a> 
-                  - A beginner-level course using Python, great for problem-solving and computational thinking.
-              </li>
-              <li>
-                  <a href="https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/" target="_blank">MIT 6.006 - Introduction to Algorithms</a> 
-                  - A rigorous course on algorithms and data structures taught at MIT. Here is the <a href="https://youtube.com/playlist?list=PLUl4u3cNGP63EdVPNLG3ToM6LaEUuStEY" 
-                  target="_blank">Youtube playlist</a>  of the course.
-              </li>
-              <li>
-                  <a href="https://www.youtube.com/watch?v=jGwO_UgTS7I&list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU" target="_blank">Stanford University - CS229: Machine Learning</a> 
-                  - Andrew Ng's famous machine learning course, covering theoretical and practical aspects.
-                  Alternatively, check out this <a href="https://bit.ly/3ERmTAq" target="_blank">coursera Machine Learning specialized course</a> if you find the previous one too theoretical.
-              </li>
-              <li>
-                  For Deep Learning : check out Andrew Ng's <a href="https://bit.ly/2WjYrPB" target="_blank">coursera Deep Learning specialized course</a>. To learn about transformer models,
-                   go through the <a href="https://web.stanford.edu/class/cs25/" target="_blank">Stanford CS25: Transformers</a> course. 
-              </li>
-              <li>
-                <a href="https://udlbook.github.io/udlbook/" target="_blank">Understanding Deep Learning</a> - A free book and associated lectures and codes to understand Deep Learning properly. (But
-                it will take a lot of time to go through it).
-              </li>
-              
-              <li>
-                  You can (and should) try out various projects on <a href="https://www.kaggle.com/" target="_blank">Kaggle</a> for honing your skills. <a href="https://www.freecodecamp.org/" 
-                  target="_blank">freeCodeCamp </a> also provides extensive free tutorials on programming, data science, web development, and machine learning (they also have an 
-                  <a href="https://www.youtube.com/@freecodecamp" target="_blank">freeCodeCamp (Youtube)</a>) channel which you can check out.
-              </li>
-              <li>
-                  <a href="https://www.youtube.com/@MrPSolver/playlists" target="_blank">P Solver</a> 
-                  - Dude teaches how to tackle simple physics problems using Python. <a href="https://www.youtube.com/c/DigitalSreeni" target="_blank">DigitalSreeni</a> - Here is another 
-                  useful Youtube channel where you can learn biomedical image processing using Python.
-              </li>
-          </ul>
-      </div>
-  </div>
-</section>
-
-
-
-<!-- Contact Section -->
-<section id="contact">
-  <h2>Contact Me</h2>
-  <div class="contact-info">
-    <h3>Computer generated holography and Optical image laboratroy</h3>
-    <p>Department of Physics</p>
-    <p>Indian Institute of Technology Guwahati, 781039</p>
-    <p>Assam, India</p>
-    
-    <h3>Email:</h3>
-    <p><a href="mailto:p.choudhury@iitg.ac.in">p.choudhury@iitg.ac.in</a></p>
-    <!-- <p><a href="mailto:pranjal.choudhury264@gmail.com">pranjal.choudhury264@gmail.com</a></p> -->
-  </div>
-</section>
-
-    <!-- Footer -->
     <footer>
-      <p style="text-align: center">© Pranjal Choudhury | All Rights Reserved</p>
+      <p style="text-align: center">
+        © Pranjal Choudhury | All Rights Reserved
+      </p>
     </footer>
-
-
     <script src="script.js"></script>
   </body>
 </html>
