@@ -725,24 +725,42 @@ table td {
 .logos-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Center the logos */
-    align-items: center;
-    gap: 15px; /* Space between logos */
+    justify-content: center;
+    align-items: flex-end;
+    gap: 20px;
     padding: 10px 0;
   }
-  
-  .logos-container img {
-    width: 60px; /* Set the size of each logo */
-    height: auto; /* Maintain aspect ratio */
+
+  .logo-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .logo-item img {
+    width: 60px;
+    height: auto;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
   }
-  
-  .logos-container img:hover {
-    transform: scale(1.1); /* Slight zoom-in on hover */
+
+  .logo-item img:hover {
+    transform: scale(1.1);
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
   }
 
+  .logo-item span {
+    margin-top: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    color: grey;
+    text-decoration: none;
+  }
+
+  .logos-container a {
+    text-decoration: none;
+  }
 
 @media (max-width: 768px) {
     .experience-subsection {
