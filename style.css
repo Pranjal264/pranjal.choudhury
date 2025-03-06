@@ -221,8 +221,8 @@ nav ul li a {
 }
 
 .modal-image {
-    width: 100%;
-    height: auto;
+    width: 80%;
+    height: 80%;
     pointer-events: none; /* Prevents download */
 }
 
@@ -346,8 +346,8 @@ nav ul li a {
   }
   
   .modal-content {
-    max-width: 90%;
-    max-height: 90%;
+    max-width: 80%;
+    max-height: 80%;
     pointer-events: none;
   }
   
