@@ -381,10 +381,10 @@ nav ul li a {
 /* Grid Layout */
 .education-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Left: Qualifications (larger), Right: Certificates */
+    grid-template-columns: 1fr 1fr; 
     gap: 20px;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: auto;
 }
 
 /* Academic Qualifications & Certificates */
@@ -405,12 +405,14 @@ nav ul li a {
 /* Achievements - Full Width Below */
 .achievements {
     grid-column: 1 ; 
-    padding-left: 40px; 
+    padding-left: 20px; 
+    padding-right: 20px ;
 }
 
 .achievements ul {
     list-style-type: disc; 
-    padding-left: 20px; /* Proper indentation */
+    padding-left: 20px; 
+    padding-right: 20px ;
 }
 
 .achievements li {
@@ -440,7 +442,7 @@ nav ul li a {
 
 .certificates ul li a {
     text-decoration: none;
-    color: #4caf50;
+    color: #4caf54;
     font-weight: 600;
     transition: all 0.3s ease;
 }
@@ -499,12 +501,20 @@ table thead {
 
   
 /* Experience Section */
-
+/* .education-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+} */
 /* Two-Column Layout */
 .experience-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
+    max-width: 1200px;
+    margin: auto;
   }
   
   .experience-column {
@@ -579,28 +589,28 @@ table thead {
 }
 
 .experience-subsection ul li a {
-    color: #007acc;
+    color: #070707;
     text-decoration: none;
     transition: color 0.2s ease;
 }
 .experience-subsection ul li b {
-    color: black; 
+    color: rgb(219, 11, 11); 
     font-weight: bold; 
     text-decoration: none;
     display: inline;
 }
 
 .experience-subsection ul li a:hover {
-    color: #005b99;
+    color: #0374c0;
     text-decoration: underline;
 }
 
 
-.journal-name {
-    color: black; /* Custom color for journal names */
-    font-weight: bold; /* Make journal names bold */
-    display: inline; /* Prevent line breaks */
-  }
+/* .journal-name {
+    color: black; 
+    font-weight: bold; 
+    display: inline; 
+  } */
 
 .experience-subsection ul li:before {
     content: "•";
@@ -643,9 +653,9 @@ table thead {
 .reading-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px; /* Adjust spacing between columns */
-    align-items: flex-start; /* Aligns columns at the top while allowing variable heights */
-    max-width: 95%;
+    gap: 20px; 
+    align-items: flex-start; 
+    max-width: 1200px; /* 95%*/
     margin: 0 auto;
 }
 
