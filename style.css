@@ -57,7 +57,7 @@ nav {
     width: 100%;
     background-color: #333;
     padding: 10px 0;
-    z-index: 999; /* Make sure nav is below welcome screen */
+    /* z-index: 999; Make sure nav is below welcome screen */
 }
   
 nav ul {
@@ -93,7 +93,7 @@ nav ul li a {
 .home-container {
     display: flex;
     align-items: center;
-    max-width: 1000px;
+    max-width: 1200px;
     width: 100%;
 }
 
@@ -111,7 +111,7 @@ nav ul li a {
     border: 5px solid white;
     object-fit: cover;
     cursor: pointer;
-    transition: transform 0.3s ease;
+    /* transition: transform 0.3s ease; */
 }
 
 .profile-pic:hover {
@@ -172,7 +172,7 @@ nav ul li a {
     color: white;
     text-decoration: none;
     font-size: 1.1rem;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: 20px;
     border-radius: 5px;
     transition: background-color 0.3s, transform 0.2s;
@@ -224,7 +224,7 @@ nav ul li a {
 .modal-image {
     width: 80%;
     height: 80%;
-    pointer-events: none; /* Prevents download */
+    pointer-events: none; 
 }
 
 .close {
@@ -379,13 +379,28 @@ nav ul li a {
     text-align: center;
 }
 
-
+#education h2 {
+    font-size: 2.8rem;
+    text-align: center;
+    color: #333;
+    /* margin-top: 40px; */
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.academic-qualifications h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #044869;
+    /* border-left: 4px solid #007acc; */
+    padding-left: 10px;
+}
 .education-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
     gap: 20px;
     max-width: 1200px;
-    margin: auto;
+    margin: 0 auto;
 }
 
 /* Academic Qualifications & Certificates */
@@ -394,7 +409,7 @@ nav ul li a {
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    text-align: left; /* Left align text in all sections */
+    text-align: left; 
 }
 
 .academic-qualifications {
@@ -408,6 +423,14 @@ nav ul li a {
     grid-column: 1 ; 
     padding-left: 20px; 
     padding-right: 20px ;
+}
+
+.achievements h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #044869;
+    /* border-left: 4px solid #007acc; */
+    padding-left: 10px;
 }
 
 .achievements ul {
@@ -424,6 +447,13 @@ nav ul li a {
     grid-column: 2; /* Right */
 }
 
+.certificates h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #044869;
+    /* border-left: 4px solid #007acc; */
+    padding-left: 10px;
+}
 
 .certificates ul {
     padding-left: 10px;
