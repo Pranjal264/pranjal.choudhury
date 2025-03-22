@@ -13,7 +13,7 @@ body {
 }
   
 /* Welcome Screen */
-/* #welcome-screen {
+#welcome-screen {
     position: fixed;
     top: 0;
     left: 0;
@@ -27,10 +27,10 @@ body {
     align-items: center;
     z-index: 1000;
     animation: fadeOut 2s ease-out 1s forwards;
-    pointer-events: auto; 
-} */
+    pointer-events: auto; /* Ensure it doesn't block interactions */
+}
   
-/* #welcome-screen h1 {
+#welcome-screen h1 {
     font-size: 3rem;
     text-transform: uppercase;
 }
@@ -46,93 +46,37 @@ body {
     }
     to {
         opacity: 0;
-        visibility: hidden; 
+        visibility: hidden; /* Ensure it's hidden when done */
     }
-} */
+}
   
 /* Navigation Bar */
 nav {
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(19, 15, 15, 0.9);  /*rgba(51, 51, 51, 0.9)*/
-    backdrop-filter: blur(5px); 
-    padding: 20px 0;
-    z-index: 1000;
-    transition: all 0.3s ease-in-out;
+    background-color: #333;
+    padding: 10px 0;
+    /* z-index: 999; Make sure nav is below welcome screen */
 }
-
+  
 nav ul {
     display: flex;
     justify-content: center;
     list-style: none;
     flex-wrap: wrap;
 }
-
+  
 nav ul li {
-    margin: 0 15px;
+    margin: 0 20px;
 }
-
+  
 nav ul li a {
     color: white;
     text-decoration: none;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     text-transform: uppercase;
-    transition: color 0.3s ease;
 }
-
-nav ul li a:hover {
-    color: #22c4f5;
-}
-
-
-body {
-    padding-top: 60px; 
-}
-
-/* Responsive Navigation */
-@media (max-width: 768px) {
-    nav {
-        padding: 10px 15px;
-    }
-
-    nav ul {
-        display: none;
-        flex-direction: column;
-        background: rgba(51, 51, 51, 0.95);
-        position: absolute;
-        top: 60px;
-        width: 100%;
-        text-align: center;
-        padding: 10px 0;
-    }
-
-    nav ul.show {
-        display: flex;
-    }
-
-    nav ul li {
-        margin: 10px 0;
-    }
-
-    .menu-toggle {
-        display: block;
-        position: absolute;
-        right: 20px;
-        top: 15px;
-        font-size: 1.5rem;
-        color: white;
-        cursor: pointer;
-    }
-}
-
-/* Hide menu toggle on larger screens */
-@media (min-width: 769px) {
-    .menu-toggle {
-        display: none;
-    }
-}
-
 
 /* Home Section */
 #home {
@@ -151,7 +95,6 @@ body {
     align-items: center;
     max-width: 1200px;
     width: 100%;
-    margin-left: 20%;
 }
 
 /* Profile Picture on Left */
@@ -168,7 +111,7 @@ body {
     border: 5px solid white;
     object-fit: cover;
     cursor: pointer;
-    transition: transform 0.3s ease;
+    /* transition: transform 0.3s ease; */
 }
 
 .profile-pic:hover {
@@ -311,7 +254,7 @@ body {
 
 
 
-/* <!-- About Me Section --> */
+/* <!-- CSS for About Me Section --> */
 #about {
     padding: 80px 20px;
     text-align: center;
@@ -382,6 +325,13 @@ body {
   }
   
 
+  /* .about-pic {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    cursor: pointer;
+  } */
   
   .modal {
     display: none;
@@ -581,7 +531,14 @@ table thead {
 }
 
   
-
+/* Experience Section */
+/* .education-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+} */
 /* Two-Column Layout */
 .experience-grid {
     display: grid;
@@ -611,7 +568,15 @@ table thead {
     text-transform: uppercase;
     letter-spacing: 1px;
 }
-
+/* #experience h2 {
+    font-size: 2.8rem;
+    text-align: center;
+    color: #333;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+} */
 
 .experience-subsection {
     background: #fff;
@@ -635,6 +600,10 @@ table thead {
     padding-left: 10px;
 }
 
+/* .journal-name {
+    color: black; 
+    font-weight: bold; 
+  } */
 
 .experience-subsection ul {
     list-style: none;
@@ -668,6 +637,12 @@ table thead {
 }
 
 
+/* .journal-name {
+    color: black; 
+    font-weight: bold; 
+    display: inline; 
+  } */
+
 .experience-subsection ul li:before {
     content: "•";
     font-size: 1.5rem;
@@ -690,6 +665,13 @@ table thead {
     text-transform: uppercase;
     letter-spacing: 1px;
 }
+/* #suggested-readings h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    text-align: center;
+} */
 
 #suggested-readings p {
     font-size: 1.3rem;
@@ -698,7 +680,7 @@ table thead {
     text-align: center;
 }
 
-
+/* Flex container for side-by-side layout */
 .reading-container {
     display: flex;
     flex-wrap: wrap;
@@ -708,10 +690,10 @@ table thead {
     margin: 0 auto;
 }
 
-
+/* Each column adapts to content height while maintaining equal width */
 .reading-column {
-    flex: 1; 
-    min-width: 300px; 
+    flex: 1; /* Ensures both columns take equal width */
+    min-width: 300px; /* Prevents excessive shrinking on smaller screens */
     padding: 20px;
     background: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -862,33 +844,19 @@ table thead {
       font-size: 1rem;
     }
   }
-
-
+  
 
 /* Contact Section */
 #contact {
     padding: 80px 20px;
     background-color: #fafafa;
-    /* min-height: 100vh; */
-    /* display: flex; */
-    justify-content: center;
-    align-items: center;
-}
-#contact h2 {
-    font-size: 2.8rem;
-    text-align: center;
-    color: #333;
-    /* margin-top: 40px; */
-    margin-bottom: 40px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
 }
 
-/* #contact h2 {
+#contact h2 {
     font-size: 2.8rem;
     margin-bottom: 20px;
     text-align: center;
-} */
+}
 
 .contact-info {
     max-width: 500px;
