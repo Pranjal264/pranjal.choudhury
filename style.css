@@ -616,6 +616,67 @@ table thead {
     margin-right: 10px;
 }
 
+.experience-project {
+    background: #fff;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.experience-project:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.experience-project h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #151718;
+    border-left: 4px solid #007acc;
+    padding-left: 10px;
+}
+
+.experience-project ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.experience-project ul li {
+    margin-bottom: 12px;
+    font-size: 1.2rem;
+    color: #2c1616;
+    line-height: 1.5;
+    /* display: flex; */
+    text-align: left;
+}
+
+.experience-project ul li a {
+    color: #07b10f;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.experience-project ul li b {
+    color: rgb(219, 11, 11); 
+    font-weight: bold; 
+    text-decoration: none;
+    display: inline;
+}
+
+.experience-project ul li a:hover {
+    color: #0374c0;
+    text-decoration: underline;
+}
+
+.experience-project ul li:before {
+    content: "•";
+    font-size: 1.5rem;
+    color: #007acc;
+    margin-right: 10px;
+}
+
 /* Icons for Titles */
 .experience-subsection h3:before {
     content: "\f0a1"; /* FontAwesome Unicode Example */
