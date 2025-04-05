@@ -616,6 +616,15 @@ table thead {
     margin-right: 10px;
 }
 
+.experience-subsection h3:before {
+    /* content: "\f0a1"; FontAwesome Unicode Example */
+    content: "\f1ea"; 
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 10px;
+    color: #007acc;
+}
+
 .experience-project {
     background: #fff;
     margin-bottom: 20px;
@@ -678,12 +687,13 @@ table thead {
 }
 
 /* Icons for Titles */
-.experience-subsection h3:before {
-    content: "\f0a1"; /* FontAwesome Unicode Example */
+.experience-project h3:before {
+    /* content: "\f0a1"; */
+    content: "\f085";
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     margin-right: 10px;
-    color: #007acc;
+    color: #4b4a4a;
 }
 
 /* Logos Subsection Styles */
